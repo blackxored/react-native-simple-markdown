@@ -188,7 +188,8 @@ export default (styles) => ({
         const textStyles = [styles.text]
         !state.withinText ? textStyles.push(styles.plainText) : null
         return createElement(Text, {
-          style: textStyles
+          style: textStyles,
+          key: i
         }, word)
       })
       return words
