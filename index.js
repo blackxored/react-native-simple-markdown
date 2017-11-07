@@ -1,6 +1,6 @@
 /* @flow */
 
-import React, { PureComponent } from 'react'
+import React, { Component } from 'react'
 import { View } from 'react-native'
 import SimpleMarkdown from 'simple-markdown'
 import _ from 'lodash'
@@ -19,7 +19,7 @@ type DefaultProps = Props & {
   children: string,
 }
 
-class Markdown extends PureComponent<DefaultProps, Props, void> {
+class Markdown extends Component<DefaultProps, Props, void> {
   static defaultProps = {
     styles: initialStyles,
     children: '',
